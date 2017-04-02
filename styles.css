@@ -51,3 +51,9 @@ h1{
 	padding: 30px;
 	font-size: 4em;
 }
+h2{
+	text-align: center;
+	background: #9a86e4;
+	display: block;
+	color: white;
+}
