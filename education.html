@@ -32,6 +32,57 @@
 </tr>
 </table><hr>
 
+<div class="slideshow-container" style="float:right;">
 
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="graduation.jpg" width="400">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="graduationparty.jpg" width="400">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center" align="right">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); 
+}
+</script>
+
+<h2 align="left">I attended Acton Elementery from Kindergarten to 2nd grade, before being transfered to Thompson Crossing Elementery to be a part of their gifted program. I attended 
+Franklin Township Middle School East, studying algebra and etymology as a part of the "reach" class. For high school, I attended Franklin Central High School and recieved
+Indiana Academic Honors, Franklin Central Honors, and Core 40 diplomas. To achieve eligibility for the Franklin Central Honors diploma, I had to have at least 12 preAP or AP credits on top of the Indiana Academic Honors requirements,
+ which I achieved with a lot of hard work. My preAP classes included Geomtery, English 9 and 10, Precalculus, and Geography. My AP classes included Calculus, English 11, Writing and Literature,
+ Statistics, and Computer Science. I also took photoshop, html, and typing based classes. </h2><br><br><hr><br><h2>
+ I began attending the University of Indianapolis in the fall of 2015 and began taking design and programming classes as well as marketing, German, and writing classes. I have moved forward
+ to be a Junior in my second year by entering with a semester's worth of AP credits as well as scoring highly in German and Math placement tests. I have also been taking classes during the Summer to graduate a year early. 
+</h2>
+<div class="footer"><p>Copyright Natalie Kight 2017</p></div>
 </body>
 </html>
