@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Natalie</title>
+	<link rel='stylesheet' type='text/css' href='styles.css'/>
+</head>
+<body>
+<h1>Natalie Kight</h1>
+<hr>
+<table width="100%">
+<tr>
+<td><a href="index.html"><button class="dropbtn">Home</button></a></td>
+<td><div class="dropdown">
+  <button class="dropbtn">About Me</button>
+  <div class="dropdown-content">
+    <a href="education.html">Education</a>
+    <a href="work.html">Work</a>
+	<a href="activities.html">Activities</a>
+  </div></td>
+<td><div class="dropdown">
+  <button class="dropbtn">Work Examples</button>
+  <div class="dropdown-content">
+    <a href="webpages.html">Web Pages</a>
+    <a href="java.html">Java</a>
+	<a href="unity.html">Unity</a>
+	<a href="graphics.html">Graphics</a>
+	<a href="robotics.html">Robotics</a>
+  </div></td>
+<td><a href="resume.html"><button class="dropbtn">Resume</button></a></td>
+  </div></td>
+</tr>
+</table><hr>
+<h2>Email me:</h2>
+
+
+<?php
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "kightn@uindy.edu";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Subject: <input name="subject" type="text" /><br />
+  Message:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Submit" />
+  </form>
+  
+<?php
+  }
+?>
+
+<h2>or send an email to kightn.uindy.edu</h2>
+
+</body>
+</html>
+
+</body>
+</html>
